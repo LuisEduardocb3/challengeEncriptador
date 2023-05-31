@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f4fc;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  animation: fade-in 1s;
+}
+
+.contenedorcajatexto {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  padding-left: 100px;
+  width: 1080px;
+  height: 600px;
+}
+
+.cajatexto {
+  width: 80;
+  height: 100%;
+  border: none;
+  background-color: #f4f4fc;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
+  cursor: pointer;
+  color: #0A3B71;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.cajatexto::placeholder {
+  color: #0A3B71;
+}
+
+.alerta {
+  position: absolute;
+  top: 750px;
+  left: 370px;
+  display: flex;
+  color: #495057;
+}
+
+.contenedor-botones {
+  position: absolute;
+  top: 800px;
+  height: 80px;
+  padding-left: 15%;
+  padding-top: 15px;
+}
+
+.btn-encriptar {
+  background-color: #0A3B71;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-encriptar:hover {
+  background-color: #16a729;
+}
+
+.btn-desencriptar {
+  background-color: #D8DFE8;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-desencriptar:hover {
+  background-color: #16a729;
+}
+
+.seccion2 {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 860px;
+  right: 200px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedormuneico {
+  position: absolute;
+  left: 5px;
+  top: 90px;
+  box-sizing: border-box;
+  padding-top: 2px;
+}
+
+.contenedor-parrafo {
+  position: absolute;
+  box-sizing: border-box;
+  top: 470px;
+  left: 40px;
+}
+
+.contenedor-parrafo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: #343a40;
+}
+
+.contenedor-parrafo p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #495057;
+  padding-top: 10px;
+}
+
+.contenedor-resultado {
+  position: absolute;
+  bottom: 410px;
+  width: 320px;
+  height: 450px;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 25px;
+}
+
+.contenedor-resultado p {
+  color: #495057;
+  font-size: 25px;
+}
+
+.contenedor-copiar {
+  display: flex;
+  position: absolute;
+  bottom: 400px;
+  top: 700px;
+  background-color: aqua;
+  padding-left: 40px;
+}
+
+.btn-copiar {
+  width: 287px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #0A3B71;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #0a3871;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  right: 6px;
+  animation: btn-animation 0.5s;
+  transition: background-color 0.3s ease;
+}
+
+.btn-copiar:hover {
+  background-color: #16a729;
+}
+.ocultar {
+  display: none;
+}
+
+/* Animación para el botón */
+@keyframes btn-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animación de fundido */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Nueva animación para el botón */
+@keyframes new-btn-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilos aplicados cuando el ancho de la pantalla es menor o igual a 600px */
+@media screen and (max-width: 600px) {
+  main {
+    margin: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas de hasta 768px de ancho */
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para pantallas de hasta 480px de ancho */
+}
+
+.texto-resultado {
+  width: 110%;
+  height: 160%;
+  border: none;
+  background-color: white;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
+  cursor: pointer;
+  color: #0A3B71;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  resize: none;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.texto-resultado::placeholder {
+  color: #0A3B71;
+}
+
+.footer {
+  background-color: #f4f4fc;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}

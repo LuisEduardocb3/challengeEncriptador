@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de texto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <header>
+    <img class="logo" src="C:\Users\frederick\Desktop\Encriptador\Logo.png" alt="logo">
+  </header>
+  <main>
+    <section class="seccion1">
+      <div class="contenedorcajatexto">
+        <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
+      </div>
+      <div class="alerta">
+        <img src="file:///C:/Users/frederick/Downloads/alerta.svg" alt="alerta">
+        <p>Solo letras minusculas y sin acentos</p>
+      </div>
+      <div class="contenedor-botones">
+        <input type="button" class="btn-encriptar" value="Encriptar">
+        <input type="button" class="btn-desencriptar" value="Desencriptar">
+      </div>
+    </section>
+    <section class="seccion2">
+      
+      <div class="contenedor-resultado">
+        <textarea class="texto-resultado" readonly></textarea>
+        <div class="contenedormuneico">
+          <img src="C:\Users\frederick\Desktop\Encriptador\Muñeco.png" alt="muneico">
+        </div>
+        <div class="contenedor-parrafo">
+          <h3>Ningun mensaje fue<br>encontrado</h3>
+          <p>Ingresa el texto a encriptar ó    <br>    desencriptar</p>
+        </div>
+        <div class="contenedor-copiar">
+          <input type="button" class="btn-copiar" value="Copiar">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+<footer class="footer">
+  <p>Pagina por</p><b>Luis Eduardo Garcia Mendoza</b>
+</footer>
+</html>
